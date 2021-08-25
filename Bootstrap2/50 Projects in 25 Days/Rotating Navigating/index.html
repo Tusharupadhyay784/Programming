@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rotating Navigations</title>
+</head>
+<body>
+    <div class="container">
+      <div class="circle-container">
+          <div class="circle">
+              <button id="close">
+                  <i class="fas fa-time"></i>
+              </button>
+              <button id="open">
+                  <div class="fas fa-bar"></div>
+              </button>
+          </div>
+      </div>  
+      <div class="content">
+          <h1>Amazing Articles</h1>
+          <small>Haridas</small>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dicta facilis cumque, doloremque voluptatem harum quis sapiente, hic sunt nihil, consectetur ullam repellat expedita? Officiis ut, mollitia tempore praesentium repellat assumenda soluta dolores ratione aut nostrum dolorem aliquam veritatis similique suscipit voluptates sit tenetur! Ipsa quidem voluptas eos est accusantium deserunt facilis dignissimos nulla veritatis maxime, quod vitae, sint asperiores officiis optio eligendi. Unde temporibus hic voluptates a magnam! Soluta aperiam dolores eveniet, quas, eaque molestiae aliquam, cupiditate corporis sapiente incidunt ipsum sint tenetur consequuntur deleniti quos pariatur deserunt veniam ipsa nobis necessitatibus explicabo nisi. Esse impedit blanditiis ut nostrum.</p>
+          <h3>My Hari</h3>
+          <img src="/217174196_1512411699105268_168180866174370290_n.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est nobis dolorem? Tempora minus corporis, cupiditate dicta totam fugiat ullam earum, praesentium porro eum repellendus impedit cum quibusdam recusandae hic ipsa. Illum, placeat perferendis iure eveniet repellat dolores laboriosam molestias eum quas quasi atque accusantium, alias itaque dolorum sint nam!</p>
+      </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-user-alt"></i>About</li>
+            <li><i class="fas fa-env"></i>Contact</li>
+        </ul>
+    </nav>
+</body>
+<script>
+    const open = document.getElementById('open')
+    const close = document.getElementById('close')
+    const container = document.querySelector('.container')
+    open.addEventListener('click',()=>{
+        container.classList.add('show-nav')
+    });
+    
+    close.addEventListener('click',()=>{
+        container.classList.remove('show-nav')
+    });
+
+</script>
+</html>
